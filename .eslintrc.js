@@ -1,0 +1,61 @@
+module.exports = {
+  'env': {
+      'browser': true,
+      'es2021': true
+  },
+  'ignorePatterns': [
+      '**/dist/**/*.js'
+  ],
+  'extends': [
+      'airbnb-base',
+      '@nuxtjs/eslint-config-typescript'
+  ],
+  'parserOptions': {
+      'ecmaVersion': 12,
+      'sourceType': 'module'
+  },
+  'rules': {
+      'no-use-before-define': 'off',
+      'no-shadow': 'off',
+      'import/extensions': [
+          'error',
+          'always',
+          {
+              'js': 'never',
+              'ts': 'never',
+              'jsx': 'never',
+              'tsx': 'never',
+              'vue': 'always'
+          }
+      ],
+      'no-restricted-imports': [
+          'error',
+          {
+              'patterns': [
+                  './*',
+                  '../*'
+              ]
+          }
+      ],
+      'arrow-parens': [
+          'error',
+          'always'
+      ]
+  },
+  'settings': {
+      'import/resolver': {
+          'node': {
+              'extensions': [
+                  '.js',
+                  '.json'
+              ],
+              'paths': [
+                  'src'
+              ]
+          },
+          'import/extensions': [
+              '.js'
+          ]
+      }
+  }
+}

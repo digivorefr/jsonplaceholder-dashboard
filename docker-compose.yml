@@ -1,0 +1,14 @@
+version: "3.6"
+
+services:
+  frontend:
+    container_name: ${PROJECT_NAME}
+    build: ./docker
+    env_file:
+      - .env
+    ports:
+      - "${NUXT_HOST}:${NUXT_PORT}:${NUXT_PORT}"
+    command: sh -c "yarn dev"
+    volumes:
+      - ./:/var/www/html
+    restart: unless-stopped
