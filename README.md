@@ -14,6 +14,7 @@ Nuxt, Vue, Typescript, Scss, Docker
 - update the .env variables depending on your needs
 - run ```docker-compose up -d```
 - go into the container `docker exec -ti project sh`
+- run `yarn install`
 - run yarn commands `yarn dev` or `yarn build`
 - browse `http://localhost:3000`
 
