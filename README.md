@@ -1,5 +1,8 @@
-# picsum.photos carousel
-Uses picsum.photos API to randomly select 10 pictures and display them into a carousel.
+# jsonplaceholder dashboard
+Uses [Json Placeholder](https://jsonplaceholder.typicode.com/) API to provide a user dashboard with details.
+
+## Stack
+Nuxt, Vue, Typescript, Scss, Docker
 
 ## Install
 
@@ -9,16 +12,14 @@ Uses picsum.photos API to randomly select 10 pictures and display them into a ca
 - ```cd``` to your cloned repo directory
 - then ```cp .env.example .env```
 - update the .env variables depending on your needs
-- run ```docker-compose up```
-- browse `http://localhost`
+- run ```docker-compose up -d```
+- go into the container `docker exec -ti project sh`
+- run yarn commands `yarn dev` or `yarn build`
+- browse `http://localhost:3000`
 
 ### Without docker
 **your need NodeJS and Yarn.**
 - clone the repo
 - run `yarn`
 - run `yarn run dev`
-- browse `http://localhost`
-
-## Dev mode vs. Prod mode
-- Development mode will launch the server, enable HMR, launch webpack in watch mode.
-- Production mode compiles your code only once, into minified files and serves it through the server.
+- browse `http://localhost:3000`

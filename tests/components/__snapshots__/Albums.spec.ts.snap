@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Albums fetch and display albums 1`] = `
+<div
+  class="user__albums"
+>
+  <h2>
+    Albums
+  </h2>
+   
+  <div
+    class="user__albums__wrapper"
+  >
+    <div
+      class="user__albums__grid"
+    >
+      <div
+        class="user__album"
+      >
+        <h4
+          class="user__album__title"
+        >
+          
+          quidem molestiae enim
+        
+        </h4>
+         
+        <div
+          class="user__album__gallery"
+        >
+          <div
+            class="user__album__gallery__picture"
+          >
+            <div
+              class="loader"
+            />
+             
+            <img
+              loading="lazy"
+              src="https://via.placeholder.com/150/92c952"
+            />
+          </div>
+          <div
+            class="user__album__gallery__picture"
+          >
+            <div
+              class="loader"
+            />
+             
+            <img
+              loading="lazy"
+              src="https://via.placeholder.com/150/771796"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="user__album"
+      >
+        <h4
+          class="user__album__title"
+        >
+          
+          sunt qui excepturi placeat culpa
+        
+        </h4>
+         
+        <div
+          class="user__album__gallery"
+        >
+          <div
+            class="user__album__gallery__picture"
+          >
+            <div
+              class="loader"
+            />
+             
+            <img
+              loading="lazy"
+              src="https://via.placeholder.com/150/92c952"
+            />
+          </div>
+          <div
+            class="user__album__gallery__picture"
+          >
+            <div
+              class="loader"
+            />
+             
+            <img
+              loading="lazy"
+              src="https://via.placeholder.com/150/771796"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

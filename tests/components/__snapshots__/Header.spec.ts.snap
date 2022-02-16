@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<header
+  class="header"
+>
+  <div
+    class="container header__wrapper"
+  >
+    <nav
+      class="header__nav"
+    >
+      <a
+        to="/"
+      >
+        
+        All users
+      
+      </a>
+    </nav>
+     
+    <input
+      id="theme"
+      name="theme"
+      style="opacity: 0; position: absolute; visibility: hidden; z-index: -1; pointer-events: none;"
+      type="checkbox"
+    />
+     
+    <label
+      for="theme"
+      id="theme-switcher"
+    >
+      <div
+        class="icon icon--sun"
+      />
+       
+      <div
+        class="icon icon--moon"
+      />
+    </label>
+     
+    <div
+      class="profile"
+    >
+      <p
+        class="profile__name"
+      >
+        
+        Marty McFly
+      
+      </p>
+       
+      <a
+        class="profile__picture"
+        href="https://youtu.be/fCjsUxbNmIs?t=102"
+        target="_blank"
+      >
+        <img
+          alt="Profile picture"
+          src="~/static/images/profile.jpg"
+        />
+      </a>
+    </div>
+  </div>
+</header>
+`;

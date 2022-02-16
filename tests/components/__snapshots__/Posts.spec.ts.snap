@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Posts Fetch and display posts 1`] = `
+<div
+  class="user__posts"
+>
+  <h2>
+    Posts
+  </h2>
+   
+  <div
+    class="user__posts__wrapper"
+  >
+    <div
+      class="user__posts__grid"
+    >
+      <div
+        class="user__post"
+      >
+        <h4
+          class="user__post__title"
+        >
+          
+          sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+        
+        </h4>
+         
+        <p
+          class="user__post__content"
+        >
+          
+          quia et suscipit
+suscipit recusandae consequuntur expedita et cum
+reprehenderit molestiae ut ut quas totam
+nostrum rerum est autem sunt rem eveniet architecto
+        
+        </p>
+      </div>
+      <div
+        class="user__post"
+      >
+        <h4
+          class="user__post__title"
+        >
+          
+          qui est esse
+        
+        </h4>
+         
+        <p
+          class="user__post__content"
+        >
+          
+          est rerum tempore vitae
+sequi sint nihil reprehenderit dolor beatae ea dolores neque
+fugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis
+qui aperiam non debitis possimus qui neque nisi nulla
+        
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

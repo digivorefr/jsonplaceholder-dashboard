@@ -1,0 +1,31 @@
+@mixin --mq($breakpoints, $media: screen) {
+  $max: 0px;
+  @each $breakpoint in $breakpoints {
+    // Type validation and find highest value
+    @if (type-of($breakpoint) != 'number') {
+      @error "Type error : #{$breakpoint}";
+    }
+    @if ($breakpoint > $max) {
+      $max: $breakpoint;
+    }
+  }
+  // Build the media query string from $bps
+  $str: '';
+  @each $breakpoint in $breakpoints {
+    // Build a max-width if needed
+    @if $max == $breakpoint and (length($breakpoints) > 1) {
+      $str: '#{$str} and (max-width:#{$breakpoint - 1})';
+    } @else if $breakpoint == 0px and length($breakpoints) == 1 {
+      // For '0px' breakpoint, we don't need to write a media query. The @content code is rendered.
+      @content;
+    } @else {
+      // Otherwise, build a min-width media query
+      $str: '#{$str} and (min-width:#{$breakpoint})';
+    }
+  }
+  @if $str != '' {
+    @media #{$media}#{$str} {
+      @content;
+    }
+  }
+}

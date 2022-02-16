@@ -1,0 +1,179 @@
+@use 'sass:math';
+// Init.
+@import 'mixins';
+
+body {
+  // css variables...
+  --primary: #000000;
+  --primary-rgb: 0, 0, 0;
+  --success: #008357;
+  --success-rgb: 0, 131, 87;
+  --error: #9b0141;
+  --error-rgb: 155, 1, 65;
+  --bg: #f8f8f8;
+  --txt: #303030;
+  --light: #fefefe;
+  --light-rgb: 254, 254, 254;
+  --dark: #101010;
+  --dark-rgb: 16, 16, 16;
+  --columns: 1;
+  --ease: cubic-bezier(0.2, 0, 0.355, 1);
+  //Basic settings.
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background: var(--bg);
+  color: var(--txt);
+
+  &.dark-mode {
+    --primary: #ffffff;
+    --primary-rgb: 255, 255, 255;
+    --bg: #060606;
+    --txt: #c0c0c0;
+    --light: #0c0c0c;
+    --light-rgb: 13, 13, 13;
+    --dark: #efefef;
+    --dark-rgb: 239, 239, 239;
+    --shadow: 0, 0, 0;
+  }
+}
+
+// Resets.
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.02em;
+  font-weight: 900;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: all 70ms var(--ease);
+  &,
+  &:visited {
+    color: inherit;
+  }
+  &:hover {
+    text-decoration: underline;
+    transition-duration: 150ms;
+    color: var(--primary);
+  }
+}
+
+// Layout.
+#app {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  flex-direction: column;
+
+  header.header {
+    z-index: 20;
+  }
+
+  .page {
+    flex: 1 1 auto;
+    padding: 80px 0;
+    z-index: 10;
+  }
+}
+
+.container {
+  position: relative;
+  width: calc(100% - 2rem);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  &[class*='--grid'] {
+    @extend %grid;
+    gap: 4rem;
+  }
+}
+
+.page {
+  h1 {
+    padding: 0 0 0.5rem 0;
+  }
+}
+
+// Placeholders.
+%grid {
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+}
+
+%tile {
+  --tile-bg: var(--light);
+  --tile-padding: 2rem;
+  --tile-radius: 4px;
+  --tile-text-align: unset;
+
+  padding: var(--tile-padding);
+  box-shadow: 0px 15px 15px rgba(var(--shadow), 0.025);
+  background: var(--tile-bg);
+  border-radius: var(--tile-radius);
+  text-align: var(--tile-text-align);
+  word-break: break-all;
+
+  h1 {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  @include --mq(768px) {
+    word-break: normal;
+    h1 {
+      font-size: 2em;
+    }
+  }
+}
+
+%loaded {
+  animation: loaded 250ms var(--ease) 1 backwards;
+  @for $i from 1 through 10 {
+    &:nth-child(10n + #{$i}) {
+      animation-delay: (100 + math.random(100)) + ms;
+    }
+  }
+}
+
+@keyframes loaded {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.error {
+  &__title {
+    @extend %tile;
+    --tile-bg: rgba(var(--error-rgb), 0.2);
+    --tile-padding: 1rem;
+  }
+}
+
+@import 'components';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap');

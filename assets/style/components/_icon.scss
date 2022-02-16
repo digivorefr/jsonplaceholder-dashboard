@@ -1,0 +1,49 @@
+.icon {
+  --icon-bg: var(--dark);
+  position: relative;
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--icon-bg);
+  flex: none;
+
+  &[class*='business'] {
+    mask: url(~/static/icons/business.svg) no-repeat center / contain;
+  }
+  &[class*='email'] {
+    mask: url(~/static/icons/email.svg) no-repeat center / contain;
+  }
+  &[class*='home'] {
+    mask: url(~/static/icons/home.svg) no-repeat center / contain;
+  }
+  &[class*='link'] {
+    mask: url(~/static/icons/link.svg) no-repeat center / contain;
+  }
+  &[class*='location'] {
+    mask: url(~/static/icons/location.svg) no-repeat center / contain;
+  }
+  &[class*='phone'] {
+    mask: url(~/static/icons/phone.svg) no-repeat center / contain;
+  }
+  &[class*='validate'] {
+    mask: url(~/static/icons/validate.svg) no-repeat center / contain;
+  }
+  &[class*='activity'] {
+    mask: url(~/static/icons/activity.svg) no-repeat center / contain;
+  }
+  &[class*='circle'] {
+    mask: url(~/static/icons/circle.svg) no-repeat center / contain;
+  }
+  &[class*='sun'] {
+    mask: url(~/static/icons/sun.svg) no-repeat center / contain;
+  }
+  &[class*='moon'] {
+    mask: url(~/static/icons/moon.svg) no-repeat center / contain;
+  }
+  &[class*='light'] {
+    --icon-bg: var(--light);
+  }
+  &[class*='success'] {
+    --icon-bg: var(--success);
+  }
+}

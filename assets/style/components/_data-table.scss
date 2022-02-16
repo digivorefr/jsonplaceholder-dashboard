@@ -1,0 +1,47 @@
+.data-table {
+  @extend %tile;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  min-width: 0;
+  position: relative;
+  display: flex;
+
+  &__scroller {
+    position: relative;
+    width: 0;
+    overflow-x: auto;
+    flex: 1 1 auto;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex: 1 1 auto;
+  }
+
+  &__column {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+  }
+
+  &__cell {
+    white-space: nowrap;
+    padding: 1rem;
+
+    @extend %loaded;
+
+    a {
+      text-decoration: underline;
+      &:hover {
+        color: var(--primary);
+      }
+    }
+
+    &[class*='--heading'] {
+      font-weight: bold;
+      color: var(--dark);
+      border-bottom: 1px solid rgba(var(--dark-rgb), 0.1);
+    }
+  }
+}

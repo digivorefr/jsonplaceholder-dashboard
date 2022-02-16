@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Users renders correctly 1`] = `
+<div>
+  <h1>
+    Users
+  </h1>
+   
+  <datatable-stub
+    options="[object Object]"
+  />
+</div>
+`;

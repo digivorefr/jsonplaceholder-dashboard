@@ -8,7 +8,7 @@ services:
       - .env
     ports:
       - "${NUXT_HOST}:${NUXT_PORT}:${NUXT_PORT}"
-    command: sh -c "yarn dev"
+    command: sh -c "tail -f /dev/null"
     volumes:
       - ./:/var/www/html
     restart: unless-stopped

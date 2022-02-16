@@ -1,5 +1,12 @@
 [
   {
+    "name": "users-id",
+    "path": "/users/:id?",
+    "component": "/var/www/html/pages/users/_id.vue",
+    "chunkName": "pages/users/_id",
+    "_name": "_13a76535"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/var/www/html/pages/index.vue",

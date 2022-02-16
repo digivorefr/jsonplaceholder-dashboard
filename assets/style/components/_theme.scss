@@ -1,0 +1,31 @@
+// Theme switcher.
+#theme {
+  &-switcher {
+    position: relative;
+    display: flex;
+    gap: 0.25rem;
+    cursor: pointer;
+
+    .icon {
+      width: 1em;
+      height: 1em;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: calc(100% + 0.175rem);
+      width: 50%;
+      height: 1px;
+      left: 0%;
+      background: var(--txt);
+
+      transition: all 125ms var(--ease);
+
+      body.dark-mode & {
+        left: 50%;
+      }
+    }
+  }
+}

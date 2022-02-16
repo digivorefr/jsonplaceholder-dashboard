@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todos fetch and display todos 1`] = `
+<div
+  class="user__todos"
+>
+  <h2>
+    Todos
+  </h2>
+   
+  <div
+    class="user__todos__wrapper"
+  >
+    <div
+      class="user__todos__grid"
+    >
+      <label
+        class="user__todo"
+        for="todo1"
+      >
+        <input
+          class="user__todo__checkbox"
+          id="todo1"
+          type="checkbox"
+        />
+         
+        <div
+          class="icon icon--circle--light user__todo__icon"
+        />
+         
+        <p
+          class="user__todo__content"
+        >
+          delectus aut autem
+        </p>
+      </label>
+      <label
+        class="user__todo"
+        for="todo2"
+      >
+        <input
+          class="user__todo__checkbox"
+          id="todo2"
+          type="checkbox"
+        />
+         
+        <div
+          class="icon icon--circle--light user__todo__icon"
+        />
+         
+        <p
+          class="user__todo__content"
+        >
+          quis ut nam facilis et officia qui
+        </p>
+      </label>
+    </div>
+  </div>
+</div>
+`;

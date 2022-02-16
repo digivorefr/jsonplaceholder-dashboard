@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User renders correctly 1`] = `
+<div
+  class="container container--grid"
+>
+  <div
+    class="user"
+  >
+    <header>
+      <div>
+        <h1>
+          Bret
+        </h1>
+         
+        <p>
+          #1 - Leanne Graham 
+        </p>
+      </div>
+    </header>
+     
+    <section
+      class="user__main"
+    >
+      <h2>
+        Infos
+      </h2>
+       
+      <div
+        class="user__main__wrapper"
+      >
+        <div
+          class="user__info"
+        >
+          <h4>
+            Contact
+          </h4>
+           
+          <ul>
+            <li>
+              <div
+                class="icon icon--email"
+              />
+               
+              <a
+                href="mailto:Sincere@april.biz"
+                target="_blank"
+              >
+                Sincere@april.biz
+              </a>
+            </li>
+             
+            <li>
+              <div
+                class="icon icon--phone"
+              />
+               
+              <a
+                href="tel:+17707368031"
+                target="_blank"
+              >
+                1-770-736-8031 x56442
+              </a>
+            </li>
+             
+            <li>
+              <div
+                class="icon icon--link"
+              />
+               
+              <a
+                href="https://hildegard.org"
+                target="_blank"
+              >
+                hildegard.org
+              </a>
+            </li>
+          </ul>
+        </div>
+         
+        <div
+          class="user__info"
+        >
+          <h4>
+            Address
+          </h4>
+           
+          <ul>
+            <li>
+              <div
+                class="icon icon--home"
+              />
+               
+              <span>
+                
+                Apt. 556
+                <br />
+                
+                Kulas Light
+                <br />
+                
+                Gwenborough 92998
+              
+              </span>
+            </li>
+             
+            <li>
+              <div
+                class="icon icon--location"
+              />
+               
+              <a
+                href="https://maps.google.com/?q=-37.3159,81.1496"
+                target="_blank"
+              >
+                View on Google Maps
+              </a>
+            </li>
+          </ul>
+        </div>
+         
+        <div
+          class="user__info"
+        >
+          <h4>
+            Company
+          </h4>
+           
+          <ul>
+            <li>
+              <div
+                class="icon icon--business"
+              />
+               
+              <span>
+                <h5>
+                  Romaguera-Crona
+                </h5>
+                 
+                <span
+                  class="catchphrase"
+                >
+                  
+                  Multi-layered client-server neural-net
+                
+                </span>
+              </span>
+            </li>
+             
+            <li>
+              <div
+                class="icon icon--activity"
+              />
+              
+              harness real-time e-markets
+            
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+   
+  <div
+    class="user__activities"
+  >
+    <posts-stub
+      id="1"
+    />
+     
+    <todos-stub
+      id="1"
+    />
+     
+    <albums-stub
+      id="1"
+    />
+  </div>
+</div>
+`;

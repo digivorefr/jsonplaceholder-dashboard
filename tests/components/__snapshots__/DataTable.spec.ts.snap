@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataTable table well formed 1`] = `
+<div
+  class="data-table"
+>
+  <div
+    class="data-table__scroller"
+  >
+    <div
+      class="data-table__wrapper"
+    >
+      <div
+        class="data-table__column"
+      >
+        <div
+          class="data-table__cell data-table__cell--heading"
+        >
+          
+          Name
+        
+        </div>
+         
+        <datatablecell-stub
+          value="Marty"
+        />
+        <datatablecell-stub
+          value="Emmett"
+        />
+        <datatablecell-stub
+          value="Biff"
+        />
+      </div>
+      <div
+        class="data-table__column"
+      >
+        <div
+          class="data-table__cell data-table__cell--heading"
+        >
+          
+          Role
+        
+        </div>
+         
+        <datatablecell-stub
+          value="Hero"
+        />
+        <datatablecell-stub
+          value="Scientist"
+        />
+        <datatablecell-stub
+          value="Vilain"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
